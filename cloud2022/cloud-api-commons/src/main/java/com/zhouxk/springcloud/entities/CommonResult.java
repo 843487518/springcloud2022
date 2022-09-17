@@ -3,7 +3,7 @@ package com.zhouxk.springcloud.entities;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.val;
+
 
 /**
  * @BelongsProject: cloud2022
