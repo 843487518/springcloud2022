@@ -20,7 +20,7 @@ import java.util.List;
  */
 @RestController
 @Slf4j
-@RequestMapping("/payment8002")
+@RequestMapping("/payment")
 public class PaymentController {
 
     @Resource
