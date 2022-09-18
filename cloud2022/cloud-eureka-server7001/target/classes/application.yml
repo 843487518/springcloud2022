@@ -8,15 +8,22 @@ eureka:
     #单机版 localhost
     hostname: eureka7001
   server:
+    # 指定每分钟需要收到的续约次数的阀值，默认值为0.85
     # default is 0.85 we can set the value to 0.49
     renewal-percent-threshold: 0.49
+    # 关闭自我保护模式
+#    enable-self-preservation: false
+    # 触发自我保护模式的时间间隔
+#    eviction-interval-timer-in-ms: 2000
+    ###### 如果关闭自我保护模式，server收不到心跳，就会将对应的服务剔除
   client:
     #表示不向注册中心注册自己
     register-with-eureka: false
     #表示自己就是注册中心，职责是维护服务实例，并不需要去检索服务
     fetch-registry: false
     service-url:
-      #设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
-      # 单机版，注册自己 http://${eureka.instance.hostname}:${server.port}/eureka/
+      # 设置与eureka server交互的地址查询服务和注册服务都需要依赖这个地址
+      # 单机版，注册自己
+      # defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
       # 集群版，注册其余的服务
       defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/
