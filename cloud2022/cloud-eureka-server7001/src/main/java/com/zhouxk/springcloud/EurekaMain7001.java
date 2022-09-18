@@ -1,25 +1,26 @@
 package com.zhouxk.springcloud;
 
-import jdk.nashorn.internal.runtime.logging.Logger;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
+import org.springframework.cloud.netflix.eureka.server.EnableEurekaServer;
 
 /**
  * @BelongsProject: cloud2022
  * @BelongsPackage: com.zhouxk.springcloud
  * @Author: zhouxk
- * @CreateTime: 2022-09-16  21:47
- * @Description: springboot启动类
+ * @CreateTime: 2022-09-18  09:18
+ * @Description: Eureka服务注册中心启动类
  * @Version: 1.0
  */
+
 @Slf4j
-@EnableEurekaClient
+// 设置为服务注册中心 EurekaServer
+@EnableEurekaServer
 @SpringBootApplication
-public class PaymentMain8001 {
+public class EurekaMain7001 {
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8001.class, args);
-        log.info("项目启动:http://localhost:8001");
+        SpringApplication.run(EurekaMain7001.class, args);
+        log.info("项目启动:http://localhost:7001");
     }
 }
