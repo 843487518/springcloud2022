@@ -5,6 +5,7 @@ spring:
   application:
     name: cloud-consumer-order
 
+#在此yml中配置了eureka之后，主启动类不使用@EnableEurekaClient也会将该服务注入EurekaServer
 eureka:
   client:
     register-with-eureka: true #是否向注册中心注册自己
