@@ -9,8 +9,8 @@ import org.springframework.web.client.RestTemplate;
  * @BelongsProject: cloud2022
  * @BelongsPackage: com.zhouxk.springcloud.config
  * @Author: zhouxk
- * @CreateTime: 2022-09-17  17:38
- * @Description: 配置类，相当于配置文件
+ * @CreateTime: 2022-09-20  20:22
+ * @Description: TODO
  * @Version: 1.0
  */
 @Configuration

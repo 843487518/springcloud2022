@@ -9,7 +9,7 @@ import java.util.List;
  * @BelongsPackage: com.zhouxk.springcloud.service
  * @Author: zhouxk
  * @CreateTime: 2022-09-17  12:18
- * @Description: TODO
+ * @Description: springboot启动类
  * @Version: 1.0
  */
 public interface PaymentService {

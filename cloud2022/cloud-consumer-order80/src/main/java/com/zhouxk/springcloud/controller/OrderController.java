@@ -21,7 +21,7 @@ import java.util.List;
  */
 @RestController
 @Slf4j
-@RequestMapping("/consumer80")
+@RequestMapping("/consumer")
 public class OrderController {
 
 //    public static final String PAYMENT_URL = "http://localhost:8001";
