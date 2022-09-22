@@ -19,6 +19,8 @@
     <module>cloud-provider-payment8004</module>
     <module>cloud-consumerzk-order82</module>
       <module>cloud-provider-payment8005</module>
+    <module>cloud-providerconsul-payment8006</module>
+    <module>cloud-consumerconsul-order83</module>
   </modules>
   <packaging>pom</packaging>
 
