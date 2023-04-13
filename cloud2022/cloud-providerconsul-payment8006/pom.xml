@@ -25,7 +25,7 @@
             <version>${project.version}</version>
         </dependency>
 
-        <!-- SpringBoot整合zookeeper客户端 -->
+        <!-- SpringBoot整合consul客户端 -->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-consul-discovery</artifactId>
