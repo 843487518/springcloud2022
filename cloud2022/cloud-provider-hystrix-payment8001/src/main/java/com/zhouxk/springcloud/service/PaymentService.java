@@ -39,15 +39,15 @@ public class PaymentService {
      * @return
      */
     @HystrixCommand(fallbackMethod = "paymentInfoTimeOutHandler", commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "4000")
     })
     public String paymentInfoTimeOut(Integer id) {
         //int age = 10/0;
-
-        int second = 5;
+        int second = 3;
         long start = System.currentTimeMillis();
         try {
-            TimeUnit.SECONDS.sleep(second);
+            TimeUnit.SECONDS.
+                    sleep(second);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
