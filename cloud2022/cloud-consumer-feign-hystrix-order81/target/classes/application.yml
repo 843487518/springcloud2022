@@ -35,3 +35,8 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 5000
+    PaymentHystrixService#paymentInfoTimeOut(Integer):
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 2000

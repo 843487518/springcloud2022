@@ -46,8 +46,7 @@ public class PaymentService {
         int second = 3;
         long start = System.currentTimeMillis();
         try {
-            TimeUnit.SECONDS.
-                    sleep(second);
+            TimeUnit.SECONDS.sleep(second);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }

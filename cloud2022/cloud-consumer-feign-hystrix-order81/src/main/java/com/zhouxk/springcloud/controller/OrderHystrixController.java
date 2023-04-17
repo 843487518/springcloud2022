@@ -38,12 +38,12 @@ public class OrderHystrixController {
 
 
     @GetMapping("/consumer/payment/hystrix/timeout/{id}")
-    @HystrixCommand(commandProperties = {@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "2000")
-    })
+//    @HystrixCommand(commandProperties = {@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "2000")
+//    })
 //    @HystrixCommand(fallbackMethod = "paymentTimeOutFallbackMethod",
 //            commandProperties = {@HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "2000")
 //            })
-//    @HystrixCommand
+    @HystrixCommand
     public String paymentInfoTimeOut(@PathVariable("id") Integer id) {
         String result = paymentHystrixService.paymentInfoTimeOut(id);
         return result;
