@@ -21,9 +21,15 @@
         <module name="cloud-provider-payment8001" />
         <module name="cloud-consumer-feign-hystrix-order81" />
         <module name="cloud-consumer-feign-hystrix-order80" />
+        <module name="cloud-consumer-hystrix-dashboard9001" />
         <module name="cloud-providerconsul-payment8006" />
         <module name="cloud-consumerconsul-order83" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cloud-consumer-feign-hystrix-order82" target="1.8" />
+      <module name="cloud-provider-hystrix-payment8001 (1)" target="1.8" />
+      <module name="cloud-provider-hystrix-payment8002" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -57,17 +57,17 @@ public class OrderHystrixController {
      * @param id
      * @return
      */
-    public String paymentTimeOutFallbackMethod(@PathVariable("id") Integer id) {
+    /*public String paymentTimeOutFallbackMethod(@PathVariable("id") Integer id) {
         return "我是消费者81,对方支付系统繁忙请10秒钟后再试或者自己运行出错请检查自己,o(╥﹏╥)o";
-    }
+    }*/
 
     /**
      * hystrix 全局fallback方法
      *
      * @return
      */
-    public String payment_Global_FallbackMethod() {
+/*    public String payment_Global_FallbackMethod() {
         return "Global异常处理信息，请稍后再试，/(ㄒoㄒ)/~~";
-    }
+    }*/
 
 }

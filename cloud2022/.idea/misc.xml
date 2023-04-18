@@ -13,6 +13,7 @@
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/cloud-consumerzk-order81/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-provider-hystrix-payment8002/pom.xml" />
         <option value="$PROJECT_DIR$/cloudp-rovider-payment8001/pom.xml" />
       </set>
     </option>
