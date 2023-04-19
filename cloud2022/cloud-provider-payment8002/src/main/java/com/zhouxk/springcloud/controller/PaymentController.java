@@ -75,13 +75,8 @@ public class PaymentController {
         return this.discoveryClient;
     }
 
-    @GetMapping("feign/timeout")
-    public String getFeignTimeOut() {
-        try {
-            TimeUnit.SECONDS.sleep(3);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+    @GetMapping("lb")
+    public String getPaymentLB() {
         return serverPort;
     }
 
