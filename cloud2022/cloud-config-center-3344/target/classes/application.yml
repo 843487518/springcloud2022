@@ -22,17 +22,19 @@ eureka:
       defaultZone: http://localhost:7001/eureka
 
 
-##rabbitmq相关配置,暴露bus刷新配置的端点 SpringCloud Bus动态刷新全局广播
-#management:
-#  endpoints: #暴露bus刷新配置的端点
-#    web:
-#      exposure:
-#        include: 'bus-refresh'
-
-
 #rabbitmq相关配置
-#rabbitmq:
-#  host: localhost
-#  port: 15672
-#  username: guest
-#  password: guest
+rabbitmq:
+  host: localhost
+  port: 15672
+  username: guest
+  password: guest
+
+
+#SpringCloud Bus动态刷新定点通知 公式：http://localhost:配置中心的端口号/actuator/bus-refresh/{destination}
+#例如 只通知3355，curl -X POST "http://localhost:3344/actuator/bus-refresh/config-client:3355"
+##rabbitmq相关配置,暴露bus刷新配置的端点 SpringCloud Bus动态刷新全局广播
+management:
+  endpoints: #暴露bus刷新配置的端点
+    web:
+      exposure:
+        include: 'bus-refresh'
