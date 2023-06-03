@@ -15,6 +15,9 @@
         <option value="$PROJECT_DIR$/cloud-consumerzk-order81/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-provider-hystrix-payment8002/pom.xml" />
         <option value="$PROJECT_DIR$/cloudp-rovider-payment8001/pom.xml" />
+        <option value="$PROJECT_DIR$/codetest/pom.xml" />
+        <option value="$PROJECT_DIR$/myStudy/pom.xml" />
+        <option value="$PROJECT_DIR$/mystudy-zhouxk/pom.xml" />
       </set>
     </option>
   </component>
