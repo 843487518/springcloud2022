@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="JavaScriptSettings">
@@ -18,6 +17,8 @@
         <option value="$PROJECT_DIR$/codetest/pom.xml" />
         <option value="$PROJECT_DIR$/myStudy/pom.xml" />
         <option value="$PROJECT_DIR$/mystudy-zhouxk/pom.xml" />
+        <option value="$PROJECT_DIR$/springboot-security-demo8001/pom.xml" />
+        <option value="$PROJECT_DIR$/springsecurity-demo1-8001/pom.xml" />
       </set>
     </option>
   </component>

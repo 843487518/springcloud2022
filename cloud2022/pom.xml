@@ -38,7 +38,7 @@
     <module>cloudalibaba-provider-payment9002</module>
     <module>cloudalibaba-consumer-nacos-order83</module>
     <module>java-study-zhouxk</module>
-      <module>springsecurity-demo1-8001</module>
+    <module>cloud-security-demo1</module>
 
   </modules>
   <packaging>pom</packaging>

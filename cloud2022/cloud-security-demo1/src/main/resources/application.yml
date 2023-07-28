@@ -1,0 +1,20 @@
+server:
+  port: 6001
+
+spring:
+  application:
+    name: cloud-security-service
+#  security:
+#    通过配置文件配置登录用户名密码，测试用
+#    user:
+#      name: zhouxk
+#      password: zhouxk
+  datasource:
+#    type: com.alibaba.druid.pool.DruidDataSource
+    driver-class-name: org.gjt.mm.mysql.Driver
+    url: jdbc:mysql://localhost:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: root
+    password: root
+logging:
+  level:
+    root: debug
